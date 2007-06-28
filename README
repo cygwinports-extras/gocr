@@ -1,0 +1,86 @@
+gocr
+------------------------------------------
+GOCR is an optical character recognition program, released under the
+GNU General Public License. It reads images in many formats  and outputs
+a text file. Possible image formats are pnm, pbm, pgm, ppm, some pcx and
+tga image files. Other formats like pnm.gz, pnm.bz2, png, jpg, tiff, gif,
+bmp will be automatically converted using the netpbm-progs, gzip and bzip2
+via unix pipe.
+
+Runtime requirements:
+  cygwin-1.5.24-2
+  bzip2
+  gzip
+  jpeg
+  netpbm
+  transfig
+(gtk-ocl)
+  glib2-2.12.12-2
+  gtk2-x11-2.10.13-1
+(gocr.tcl)
+  tcl-8.4.15-1
+  tk-8.4.15-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.24-1
+  autoconf2.5-2.61-1
+  automake1.9-1.9.6-2
+  binutils-20060817-1
+  bison-2.3-1
+  cygport-0.2.9-1
+  flex-2.5.33-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  libtool1.5-1.5.23a-2
+  make-3.81-1
+  sed-4.1.5-2
+
+Canonical website:
+  http://jocr.sourceforge.net/
+
+Canonical download:
+  http://downloads.sourceforge.net/jocr/
+
+-------------------------------------------
+
+Build instructions:
+  unpack gocr-0.44-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./gocr-0.44-X.cygport all
+
+This will create:
+  /usr/src/gocr-0.44-X-src.tar.bz2
+  /usr/src/gocr-0.44-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/gocr.exe
+  /usr/bin/gocr.tcl
+  /usr/bin/gtk-ocr.exe
+  /usr/include/gocr.h
+  /usr/lib/libPgm2asc.a
+  /usr/share/doc/Cygwin/gocr-0.44.README
+  /usr/share/doc/gocr-0.44/AUTHORS
+  /usr/share/doc/gocr-0.44/BUGS
+  /usr/share/doc/gocr-0.44/CREDITS
+  /usr/share/doc/gocr-0.44/HISTORY
+  /usr/share/doc/gocr-0.44/INSTALL
+  /usr/share/doc/gocr-0.44/README
+  /usr/share/doc/gocr-0.44/TODO
+  /usr/share/man/man1/gocr.1.gz
+
+------------------
+
+Port Notes:
+
+----- version 0.44-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

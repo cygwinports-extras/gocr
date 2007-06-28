@@ -1,0 +1,9 @@
+category: Graphics
+requires: cygwin bzip2 gzip jpeg netpbm transfig
+sdesc: "OCR program w/ optional Tk and GTK+ frontends"
+ldesc: "GOCR is an optical character recognition program, released under 
+the GNU General Public License. It reads images in many formats and 
+outputs a text file. Possible image formats are pnm, pbm, pgm, ppm, some 
+pcx and tga image files. Other formats like pnm.gz, pnm.bz2, png, jpg, 
+tiff, gif, bmp will be automatically converted using the netpbm-progs, 
+gzip and bzip2 via unix pipe."
