@@ -1,0 +1,16 @@
+inherit utils
+
+DESCRIPTION="Optical character recognition"
+HOMEPAGE="http://jocr.sourceforge.net/"
+SRC_URI="mirror://sourceforge/jocr/${P}.tar.gz"
+
+DIFF_EXCLUDES="Makefile"
+
+CYGCONF_ARGS="--includedir=/usr/include --libdir=/usr/lib"
+
+src_test() {
+	cd ${B}
+	mkdir -p ${B}/examples
+	lndirs ${S}/examples ${B}/examples
+	cygmake examples || error "make examples failed"
+}
