@@ -1,5 +1,5 @@
 category: Graphics
-requires: cygwin bzip2 gzip jpeg netpbm transfig
+requires: bzip2 gzip jpeg netpbm transfig
 sdesc: "OCR program w/ optional Tk frontend"
 ldesc: "GOCR is an optical character recognition program, released under 
 the GNU General Public License. It reads images in many formats and 
